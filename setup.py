@@ -12,7 +12,7 @@ import setuptools
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 # The name of the project
-name="jupyterlab-snippets"
+name="jupyterlab-snippets-multimenus"
 
 # Ensure a valid python version
 ensure_python(">=3.6")
@@ -55,9 +55,9 @@ with open("README.md", "r") as fh:
 setup_args = dict(
     name=name,
     version=version,
-    url="https://github.com/QuantStack/jupyterlab-snippets",
-    author="QuantStack",
-    description="Code Snippets Extension for JupyterLab",
+    url="https://github.com/kuanpern/jupyterlab-snippets-multimenus",
+    author="kptan86@gmail.com",
+    description="Code Snippets Extension for JupyterLab (multi-menus)",
     long_description=long_description,
     long_description_content_type="text/markdown",
     cmdclass=cmdclass,

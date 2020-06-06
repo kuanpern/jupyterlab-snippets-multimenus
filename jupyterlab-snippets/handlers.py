@@ -1,3 +1,4 @@
+import os
 import json
 
 import tornado
@@ -35,7 +36,7 @@ class GetSnippet(APIHandler):
 def setup_handlers(web_app, loader):
     base_url = web_app.settings['base_url']
     handlers = [
-        (url_path_join(base_url, 'snippets', 'list'), ListSnippets, {'loader': loader}),
-        (url_path_join(base_url, 'snippets', 'get'), GetSnippet, {'loader': loader})
+        (url_path_join(base_url, 'multimenus_snippets', 'list'), ListSnippets, {'loader': loader}),
+        (url_path_join(base_url, 'multimenus_snippets',  'get'),   GetSnippet, {'loader': loader})
     ]
     web_app.add_handlers('.*$', handlers)
