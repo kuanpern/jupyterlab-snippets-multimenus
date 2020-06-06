@@ -129,9 +129,15 @@ const extension: JupyterFrontEndPlugin<void> = {
 
     if (menu) {
       const list = await listSnippets();
-      const snippetsMenu = createMenu(commands, toTree(list));
-      snippetsMenu.title.label = 'Snippets';
-      menu.addMenu(snippetsMenu);
+
+      const snippet_list = await listSnippets();
+      for (var i=0; i<snippet_list.length; ++i){
+        var name = snippet_list[i][0];
+        var list = snippet_list[i][1];
+        var snippetsMenu = createMenu(commands, toTree(list), [name]);
+        snippetsMenu.title.label = name;
+        menu.addMenu(snippetsMenu);
+      } // end for
     }
   }
 };
