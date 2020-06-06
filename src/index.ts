@@ -19,7 +19,8 @@ import {
   folderIcon,
 } from '@jupyterlab/ui-components';
 
-import { listSnippets, Snippet, fetchSnippet } from "./snippets";
+//import { listSnippets, Snippet, fetchSnippet } from "./snippets";
+import { listSnippets, fetchSnippet } from "./snippets";
 
 /**
  * The command IDs used by the snippets plugin.
@@ -37,7 +38,7 @@ type Tree = Map<string, Tree>;
  * Convert the list of snippets a tree.
  * @param snippets The list of snippets.
  */
-function toTree(snippets: Snippet[]) {
+function toTree(snippets) {
   const tree = new Map<string, Tree>();
   snippets.forEach(snippet => {
     let node = tree;
@@ -128,8 +129,6 @@ const extension: JupyterFrontEndPlugin<void> = {
     });
 
     if (menu) {
-      const list = await listSnippets();
-
       const snippet_list = await listSnippets();
       for (var i=0; i<snippet_list.length; ++i){
         var name = snippet_list[i][0];

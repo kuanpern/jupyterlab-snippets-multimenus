@@ -18,7 +18,7 @@ export interface SnippetContent {
  * List the available snippets.
  */
 export async function listSnippets() {
-  return requestAPI<Snippet[]>("list");
+  return requestAPI<any[]>("list");
 }
 
 /**

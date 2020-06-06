@@ -12,7 +12,7 @@ import setuptools
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 # The name of the project
-name="jupyterlab-snippets-multimenus"
+name="jupyterlab-snippets"
 
 # Ensure a valid python version
 ensure_python(">=3.6")
