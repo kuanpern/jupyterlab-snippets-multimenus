@@ -1,0 +1,1 @@
+special.fdtri(dfn, dfd, p)

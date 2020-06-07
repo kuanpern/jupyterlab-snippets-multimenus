@@ -1,0 +1,1 @@
+np.logical_not(x)

@@ -1,0 +1,1 @@
+new_array = np.logspace(1., 10., num=120, endpoint=True, base=2)

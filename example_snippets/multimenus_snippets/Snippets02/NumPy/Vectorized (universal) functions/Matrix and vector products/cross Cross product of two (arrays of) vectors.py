@@ -1,0 +1,1 @@
+np.cross(a, b)

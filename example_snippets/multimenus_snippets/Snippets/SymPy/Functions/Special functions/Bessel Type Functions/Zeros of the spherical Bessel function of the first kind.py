@@ -1,0 +1,1 @@
+jn_zeros(n, k)

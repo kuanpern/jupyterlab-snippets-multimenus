@@ -1,0 +1,1 @@
+constants.physical_constants["Faraday constant for conventional electric current"]

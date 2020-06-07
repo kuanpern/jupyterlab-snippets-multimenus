@@ -1,0 +1,1 @@
+constants.physical_constants["deuteron mass energy equivalent"]

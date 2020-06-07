@@ -1,0 +1,1 @@
+integral = integrate(exp(-x), (x, 0, oo))

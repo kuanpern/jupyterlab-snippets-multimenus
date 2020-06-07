@@ -1,0 +1,1 @@
+np.minimum(x1, x2)

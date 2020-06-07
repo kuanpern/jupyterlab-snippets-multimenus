@@ -1,0 +1,1 @@
+np.cumprod(a, axis=0)

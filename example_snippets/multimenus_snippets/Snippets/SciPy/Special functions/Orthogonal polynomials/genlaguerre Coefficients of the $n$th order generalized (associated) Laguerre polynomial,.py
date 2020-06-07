@@ -1,0 +1,1 @@
+special.genlaguerre(n, alpha[, monic])

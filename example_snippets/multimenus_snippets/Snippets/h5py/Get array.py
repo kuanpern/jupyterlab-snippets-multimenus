@@ -1,0 +1,1 @@
+bp_array = bp_f["bp_array_item"][:]

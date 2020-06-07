@@ -1,0 +1,1 @@
+special.nrdtrisd(p, x, mn)

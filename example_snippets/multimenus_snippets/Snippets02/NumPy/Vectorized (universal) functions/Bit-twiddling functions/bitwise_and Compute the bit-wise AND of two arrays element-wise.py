@@ -1,0 +1,1 @@
+np.bitwise_and(x1, x2)

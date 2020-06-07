@@ -1,0 +1,1 @@
+special.ellip_harm(h2, k2, n, p, s[, signm, signn])

@@ -1,0 +1,1 @@
+constants.physical_constants["hertz-inverse meter relationship"]

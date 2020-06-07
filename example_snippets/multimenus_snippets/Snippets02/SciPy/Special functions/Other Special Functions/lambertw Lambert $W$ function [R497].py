@@ -1,0 +1,1 @@
+special.lambertw(z[, k, tol])

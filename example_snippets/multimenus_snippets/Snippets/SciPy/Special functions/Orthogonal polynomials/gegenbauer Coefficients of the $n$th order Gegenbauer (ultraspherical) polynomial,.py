@@ -1,0 +1,1 @@
+special.gegenbauer(n, alpha[, monic])

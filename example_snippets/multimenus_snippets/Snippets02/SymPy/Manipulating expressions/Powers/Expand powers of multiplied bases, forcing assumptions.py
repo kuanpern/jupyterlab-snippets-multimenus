@@ -1,0 +1,1 @@
+expand_power_base((x*y)**z, force=True)

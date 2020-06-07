@@ -1,0 +1,1 @@
+integral = integrate(cos(x), x)

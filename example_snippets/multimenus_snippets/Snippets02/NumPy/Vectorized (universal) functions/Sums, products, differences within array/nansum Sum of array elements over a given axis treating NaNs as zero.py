@@ -1,0 +1,1 @@
+np.nansum(a, axis=0)

@@ -1,0 +1,1 @@
+special.perm(N, k, exact=False)

@@ -1,0 +1,1 @@
+np.greater_equal(x1, x2)

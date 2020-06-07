@@ -1,0 +1,1 @@
+special.lqn(n, z)

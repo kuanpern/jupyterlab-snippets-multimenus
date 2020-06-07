@@ -1,0 +1,1 @@
+special.sh_legendre(n[, monic])

@@ -1,0 +1,1 @@
+np.square(x)

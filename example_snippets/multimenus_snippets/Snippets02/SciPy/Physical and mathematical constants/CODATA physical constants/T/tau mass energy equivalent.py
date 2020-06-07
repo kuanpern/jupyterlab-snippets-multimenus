@@ -1,0 +1,1 @@
+constants.physical_constants["tau mass energy equivalent"]

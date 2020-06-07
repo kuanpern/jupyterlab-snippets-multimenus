@@ -1,0 +1,1 @@
+np.bitwise_xor(x1, x2)

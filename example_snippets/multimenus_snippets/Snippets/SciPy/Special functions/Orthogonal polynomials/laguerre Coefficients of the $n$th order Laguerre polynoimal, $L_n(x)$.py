@@ -1,0 +1,1 @@
+special.laguerre(n[, monic])

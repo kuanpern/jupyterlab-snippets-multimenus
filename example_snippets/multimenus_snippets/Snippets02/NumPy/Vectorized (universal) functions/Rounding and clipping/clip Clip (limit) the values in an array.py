@@ -1,0 +1,1 @@
+np.clip(a, a_min, a_max)

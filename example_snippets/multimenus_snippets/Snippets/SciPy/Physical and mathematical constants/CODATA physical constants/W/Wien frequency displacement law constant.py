@@ -1,0 +1,1 @@
+constants.physical_constants["Wien frequency displacement law constant"]

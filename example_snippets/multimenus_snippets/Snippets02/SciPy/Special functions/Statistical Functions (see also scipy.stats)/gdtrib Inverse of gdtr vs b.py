@@ -1,0 +1,1 @@
+special.gdtrib(a, p, x)

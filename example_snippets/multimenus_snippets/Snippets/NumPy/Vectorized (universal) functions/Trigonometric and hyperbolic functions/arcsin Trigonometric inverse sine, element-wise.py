@@ -1,0 +1,1 @@
+np.arcsin(x)

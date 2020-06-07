@@ -1,0 +1,1 @@
+trigamma(x)

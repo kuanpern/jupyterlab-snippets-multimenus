@@ -1,0 +1,1 @@
+special.ynp_zeros(n, nt)

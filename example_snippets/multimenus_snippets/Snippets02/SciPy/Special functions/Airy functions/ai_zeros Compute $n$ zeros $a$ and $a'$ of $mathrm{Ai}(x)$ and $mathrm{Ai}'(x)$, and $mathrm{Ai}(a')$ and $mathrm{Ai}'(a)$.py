@@ -1,0 +1,1 @@
+special.ai_zeros(n)

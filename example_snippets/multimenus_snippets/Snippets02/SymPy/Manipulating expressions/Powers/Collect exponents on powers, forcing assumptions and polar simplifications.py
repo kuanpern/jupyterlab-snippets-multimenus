@@ -1,0 +1,1 @@
+powdenest((z**a)**b, force=True, polar=True)

@@ -1,0 +1,1 @@
+constants.physical_constants["helion mass energy equivalent"]

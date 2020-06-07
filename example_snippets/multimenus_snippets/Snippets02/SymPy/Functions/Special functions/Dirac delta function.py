@@ -1,0 +1,1 @@
+DiracDelta(x)

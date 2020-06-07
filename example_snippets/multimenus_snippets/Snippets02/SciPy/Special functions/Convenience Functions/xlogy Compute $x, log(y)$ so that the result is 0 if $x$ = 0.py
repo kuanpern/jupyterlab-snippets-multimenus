@@ -1,0 +1,1 @@
+special.xlogy(x, y)

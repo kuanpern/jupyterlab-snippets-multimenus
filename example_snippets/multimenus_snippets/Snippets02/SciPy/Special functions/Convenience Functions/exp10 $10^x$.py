@@ -1,0 +1,1 @@
+special.exp10(x)

@@ -1,0 +1,1 @@
+special.nctdtridf(p, nc, t)

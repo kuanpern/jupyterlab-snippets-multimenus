@@ -1,0 +1,1 @@
+np.subtract(x1, x2)

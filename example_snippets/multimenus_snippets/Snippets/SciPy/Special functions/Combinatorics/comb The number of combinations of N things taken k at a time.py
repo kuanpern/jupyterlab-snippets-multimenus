@@ -1,0 +1,1 @@
+special.comb(N, k, exact=False, repetition=False)

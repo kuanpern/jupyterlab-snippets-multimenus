@@ -1,0 +1,1 @@
+lim = limit(sin(x)/x, x, 0, "+")

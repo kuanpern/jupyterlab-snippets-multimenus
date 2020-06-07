@@ -1,0 +1,1 @@
+np.convolve(a, v)

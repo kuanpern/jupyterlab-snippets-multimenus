@@ -1,0 +1,1 @@
+special.yn(n,x)

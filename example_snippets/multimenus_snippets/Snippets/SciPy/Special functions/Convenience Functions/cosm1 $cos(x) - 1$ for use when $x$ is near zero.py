@@ -1,0 +1,1 @@
+special.cosm1(x)

@@ -1,0 +1,1 @@
+constants.physical_constants["Sackur-Tetrode constant (1 K, 101.325 kPa)"]

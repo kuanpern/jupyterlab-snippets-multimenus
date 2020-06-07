@@ -1,0 +1,1 @@
+constants.physical_constants["shielded proton gyromag. ratio over 2 pi"]

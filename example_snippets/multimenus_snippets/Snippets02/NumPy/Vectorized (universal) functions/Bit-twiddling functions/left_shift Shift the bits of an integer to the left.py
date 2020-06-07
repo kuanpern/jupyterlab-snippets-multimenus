@@ -1,0 +1,1 @@
+np.left_shift(x1, x2)

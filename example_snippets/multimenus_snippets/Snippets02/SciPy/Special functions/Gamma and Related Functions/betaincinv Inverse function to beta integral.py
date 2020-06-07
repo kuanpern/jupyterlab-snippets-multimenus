@@ -1,0 +1,1 @@
+special.betaincinv(a, b, y)

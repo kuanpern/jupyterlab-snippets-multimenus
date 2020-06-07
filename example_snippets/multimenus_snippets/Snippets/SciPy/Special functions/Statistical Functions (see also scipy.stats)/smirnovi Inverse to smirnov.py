@@ -1,0 +1,1 @@
+special.smirnovi(n,y)

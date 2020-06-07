@@ -1,0 +1,1 @@
+special.boxcox1p(x, lmbda)

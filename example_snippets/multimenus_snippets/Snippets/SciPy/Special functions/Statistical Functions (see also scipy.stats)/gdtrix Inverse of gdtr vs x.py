@@ -1,0 +1,1 @@
+special.gdtrix(a, b, p)

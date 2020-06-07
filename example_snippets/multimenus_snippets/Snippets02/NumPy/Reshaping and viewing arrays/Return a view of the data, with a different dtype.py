@@ -1,0 +1,1 @@
+np.linspace(0, 10, num=50).view(complex)

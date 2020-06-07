@@ -1,0 +1,1 @@
+special.jnyn_zeros(n, nt)

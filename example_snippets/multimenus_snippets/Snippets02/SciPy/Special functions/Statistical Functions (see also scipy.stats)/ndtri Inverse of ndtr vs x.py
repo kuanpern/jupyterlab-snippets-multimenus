@@ -1,0 +1,1 @@
+special.ndtri(y)

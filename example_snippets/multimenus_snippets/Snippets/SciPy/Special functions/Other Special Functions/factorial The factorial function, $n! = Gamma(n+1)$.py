@@ -1,0 +1,1 @@
+special.factorial(n, exact=False)

@@ -1,0 +1,1 @@
+np.ediff1d(a)

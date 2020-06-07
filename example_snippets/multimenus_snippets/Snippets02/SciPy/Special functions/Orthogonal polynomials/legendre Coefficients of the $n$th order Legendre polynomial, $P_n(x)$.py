@@ -1,0 +1,1 @@
+special.legendre(n[, monic])

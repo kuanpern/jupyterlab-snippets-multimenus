@@ -1,0 +1,1 @@
+astropy.constants.M_sun

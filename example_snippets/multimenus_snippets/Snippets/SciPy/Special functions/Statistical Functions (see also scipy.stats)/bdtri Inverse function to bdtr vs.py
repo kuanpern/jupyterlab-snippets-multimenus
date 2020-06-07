@@ -1,0 +1,1 @@
+special.bdtri(k, n, y)

@@ -1,0 +1,1 @@
+special.chebyu(n[, monic])

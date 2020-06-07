@@ -1,0 +1,1 @@
+np.min(a, axis=0)

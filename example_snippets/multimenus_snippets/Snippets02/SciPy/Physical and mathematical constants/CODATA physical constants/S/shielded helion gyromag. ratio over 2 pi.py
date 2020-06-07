@@ -1,0 +1,1 @@
+constants.physical_constants["shielded helion gyromag. ratio over 2 pi"]

@@ -1,0 +1,1 @@
+special.tandg(x)

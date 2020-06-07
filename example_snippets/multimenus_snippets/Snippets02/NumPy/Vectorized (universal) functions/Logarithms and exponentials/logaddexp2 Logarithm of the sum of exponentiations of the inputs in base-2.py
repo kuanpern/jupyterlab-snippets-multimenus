@@ -1,0 +1,1 @@
+np.logaddexp2(x1, x2)

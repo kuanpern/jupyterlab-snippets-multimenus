@@ -1,0 +1,1 @@
+special.tklmbda(x, lmbda)

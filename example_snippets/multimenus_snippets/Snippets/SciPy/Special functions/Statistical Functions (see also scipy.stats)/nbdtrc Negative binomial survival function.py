@@ -1,0 +1,1 @@
+special.nbdtrc(k,n,p)

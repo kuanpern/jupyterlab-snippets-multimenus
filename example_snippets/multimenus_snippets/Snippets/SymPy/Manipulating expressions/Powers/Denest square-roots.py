@@ -1,0 +1,1 @@
+sqrtdenest(sqrt(5 + 2*sqrt(6)))

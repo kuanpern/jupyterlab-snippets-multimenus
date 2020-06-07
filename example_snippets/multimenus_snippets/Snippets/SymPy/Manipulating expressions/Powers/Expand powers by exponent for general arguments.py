@@ -1,0 +1,1 @@
+expand_power_exp(x**(y + z))

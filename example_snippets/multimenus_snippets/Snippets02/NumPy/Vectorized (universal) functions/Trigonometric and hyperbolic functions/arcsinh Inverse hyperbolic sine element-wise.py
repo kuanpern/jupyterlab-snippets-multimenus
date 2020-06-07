@@ -1,0 +1,1 @@
+np.arcsinh(x)

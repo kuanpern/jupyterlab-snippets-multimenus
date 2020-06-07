@@ -1,0 +1,1 @@
+np.argmin(a, axis=0)

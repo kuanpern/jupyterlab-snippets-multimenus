@@ -1,0 +1,1 @@
+chebyshevt_root(n, k)

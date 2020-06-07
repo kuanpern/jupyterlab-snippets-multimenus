@@ -1,0 +1,1 @@
+special.hyp3f0(a, b, c, x)

@@ -1,0 +1,1 @@
+logcombine(log(x) + z*log(y))

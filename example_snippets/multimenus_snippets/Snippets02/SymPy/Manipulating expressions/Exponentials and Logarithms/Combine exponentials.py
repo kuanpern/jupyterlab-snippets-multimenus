@@ -1,0 +1,1 @@
+powsimp(exp(y) * exp(z))

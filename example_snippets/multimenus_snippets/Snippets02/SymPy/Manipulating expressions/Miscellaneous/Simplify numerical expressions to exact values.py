@@ -1,0 +1,1 @@
+nsimplify(4.0/(1+sqrt(5.0)), constants=[GoldenRatio,])

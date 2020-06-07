@@ -1,0 +1,1 @@
+stirling(n, k, kind=1, signed=False)

@@ -1,0 +1,1 @@
+constants.physical_constants["proton mass energy equivalent in MeV"]

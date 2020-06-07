@@ -1,0 +1,1 @@
+np.logical_or(x1, x2)

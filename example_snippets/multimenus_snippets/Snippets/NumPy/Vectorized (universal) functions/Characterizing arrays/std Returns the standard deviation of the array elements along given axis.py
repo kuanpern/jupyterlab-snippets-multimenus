@@ -1,0 +1,1 @@
+np.std(a, axis=0)

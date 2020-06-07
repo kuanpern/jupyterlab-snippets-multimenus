@@ -1,0 +1,1 @@
+bp_scalar = bp_f["bp_scalar_item"][()]

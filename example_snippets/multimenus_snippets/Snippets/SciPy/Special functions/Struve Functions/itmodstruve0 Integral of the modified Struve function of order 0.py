@@ -1,0 +1,1 @@
+special.itmodstruve0(x)

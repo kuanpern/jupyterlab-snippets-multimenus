@@ -1,0 +1,1 @@
+special.eval_gegenbauer(n, alpha, x)

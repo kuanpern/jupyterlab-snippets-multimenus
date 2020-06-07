@@ -1,0 +1,1 @@
+Q.finite(x)

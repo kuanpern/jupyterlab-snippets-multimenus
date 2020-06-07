@@ -1,0 +1,1 @@
+special.erfcinv(y)

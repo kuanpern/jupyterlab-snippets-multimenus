@@ -1,0 +1,1 @@
+special.eval_jacobi(n, alpha, beta, x)

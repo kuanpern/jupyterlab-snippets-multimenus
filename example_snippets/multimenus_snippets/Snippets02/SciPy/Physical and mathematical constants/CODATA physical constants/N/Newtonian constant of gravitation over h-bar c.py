@@ -1,0 +1,1 @@
+constants.physical_constants["Newtonian constant of gravitation over h-bar c"]

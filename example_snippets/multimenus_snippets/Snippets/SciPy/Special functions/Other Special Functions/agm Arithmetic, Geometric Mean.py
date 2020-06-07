@@ -1,0 +1,1 @@
+special.agm(a, b)

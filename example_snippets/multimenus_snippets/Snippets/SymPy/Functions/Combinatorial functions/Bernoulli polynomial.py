@@ -1,0 +1,1 @@
+bernoulli(n, x)

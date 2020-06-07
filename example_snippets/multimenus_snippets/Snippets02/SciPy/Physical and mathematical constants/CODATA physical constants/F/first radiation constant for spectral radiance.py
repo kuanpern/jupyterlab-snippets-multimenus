@@ -1,0 +1,1 @@
+constants.physical_constants["first radiation constant for spectral radiance"]

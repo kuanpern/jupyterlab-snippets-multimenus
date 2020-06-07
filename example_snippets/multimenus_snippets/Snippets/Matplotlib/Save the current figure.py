@@ -1,0 +1,1 @@
+plt.savefig("figure_file_name.pdf")

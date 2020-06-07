@@ -1,0 +1,1 @@
+special.gammainccinv(a,y)

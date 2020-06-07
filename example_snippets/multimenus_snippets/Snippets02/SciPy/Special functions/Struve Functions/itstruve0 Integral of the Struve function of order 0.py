@@ -1,0 +1,1 @@
+special.itstruve0(x)

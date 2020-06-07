@@ -1,0 +1,1 @@
+special.kolmogi(p)

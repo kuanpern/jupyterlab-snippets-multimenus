@@ -1,0 +1,1 @@
+special.polygamma(n, x)

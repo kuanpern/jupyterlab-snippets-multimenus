@@ -1,0 +1,1 @@
+gegenbauer(n, a, x)

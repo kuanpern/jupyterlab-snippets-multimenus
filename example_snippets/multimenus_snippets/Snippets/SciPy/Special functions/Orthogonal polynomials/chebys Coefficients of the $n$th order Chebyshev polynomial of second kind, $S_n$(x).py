@@ -1,0 +1,1 @@
+special.chebys(n[, monic])

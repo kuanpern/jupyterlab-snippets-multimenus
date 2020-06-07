@@ -1,0 +1,1 @@
+special.ncfdtridfd(p, f, dfn, nc)

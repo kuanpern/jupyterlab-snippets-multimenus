@@ -1,0 +1,1 @@
+special.nctdtrit(df, nc, p)

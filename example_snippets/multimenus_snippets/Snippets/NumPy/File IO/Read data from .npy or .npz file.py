@@ -1,0 +1,1 @@
+data = np.load(filename)

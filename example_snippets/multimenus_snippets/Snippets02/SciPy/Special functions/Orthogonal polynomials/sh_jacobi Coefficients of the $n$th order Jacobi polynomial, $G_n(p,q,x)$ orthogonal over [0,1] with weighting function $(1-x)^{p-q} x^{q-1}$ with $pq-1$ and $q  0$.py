@@ -1,0 +1,1 @@
+special.sh_jacobi(n, p, q[, monic])

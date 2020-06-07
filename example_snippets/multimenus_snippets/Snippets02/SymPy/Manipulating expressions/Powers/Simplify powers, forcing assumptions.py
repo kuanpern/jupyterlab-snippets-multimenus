@@ -1,0 +1,1 @@
+powsimp(x**y * x**z, force=True)

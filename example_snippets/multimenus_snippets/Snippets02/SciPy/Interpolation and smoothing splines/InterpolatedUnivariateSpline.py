@@ -1,0 +1,5 @@
+x = np.arange(0, 2*np.pi+np.pi/4, 2*np.pi/8)
+y = np.sin(x)
+s = interpolate.InterpolatedUnivariateSpline(x, y)
+xnew = np.arange(0, 2*np.pi, np.pi/50)
+ynew = s(xnew)

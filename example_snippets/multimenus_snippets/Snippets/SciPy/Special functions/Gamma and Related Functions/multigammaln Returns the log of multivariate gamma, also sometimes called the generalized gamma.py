@@ -1,0 +1,1 @@
+special.multigammaln(a, d)

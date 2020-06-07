@@ -1,0 +1,1 @@
+np.ptp(a, axis=0)

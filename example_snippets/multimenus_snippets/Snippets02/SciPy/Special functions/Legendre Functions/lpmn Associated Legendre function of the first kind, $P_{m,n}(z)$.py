@@ -1,0 +1,1 @@
+special.lpmn(m, n, z)

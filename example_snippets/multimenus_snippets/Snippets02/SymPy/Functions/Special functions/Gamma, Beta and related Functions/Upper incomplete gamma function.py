@@ -1,0 +1,1 @@
+uppergamma(s, x)

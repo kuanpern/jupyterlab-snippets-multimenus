@@ -1,0 +1,1 @@
+np.savetxt(filename, np.transpose((x, y, z)))

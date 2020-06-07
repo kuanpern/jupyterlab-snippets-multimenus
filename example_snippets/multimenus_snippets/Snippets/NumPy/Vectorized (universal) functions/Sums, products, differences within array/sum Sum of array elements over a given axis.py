@@ -1,0 +1,1 @@
+np.sum(a, axis=0)

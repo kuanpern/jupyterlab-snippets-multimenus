@@ -1,0 +1,1 @@
+np.any(a, axis=0)

@@ -1,0 +1,1 @@
+np.logical_xor(x1, x2)

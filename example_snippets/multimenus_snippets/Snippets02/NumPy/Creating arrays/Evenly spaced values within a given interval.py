@@ -1,0 +1,1 @@
+new_array = np.arange(1, 10, 2)

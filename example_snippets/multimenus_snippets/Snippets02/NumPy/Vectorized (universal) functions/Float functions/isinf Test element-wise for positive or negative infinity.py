@@ -1,0 +1,1 @@
+np.isinf(x)

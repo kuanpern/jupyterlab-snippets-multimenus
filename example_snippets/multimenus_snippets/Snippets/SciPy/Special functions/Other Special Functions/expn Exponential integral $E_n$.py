@@ -1,0 +1,1 @@
+special.expn(n, x)

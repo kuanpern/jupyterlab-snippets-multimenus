@@ -1,0 +1,1 @@
+special.eval_sh_jacobi(n, p, q, x)

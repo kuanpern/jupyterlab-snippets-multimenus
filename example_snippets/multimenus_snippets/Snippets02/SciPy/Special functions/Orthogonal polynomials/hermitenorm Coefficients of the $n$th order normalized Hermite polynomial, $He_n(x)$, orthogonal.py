@@ -1,0 +1,1 @@
+special.hermitenorm(n[, monic])

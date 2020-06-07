@@ -1,0 +1,1 @@
+np.true_divide(x1, x2)
