@@ -1,18 +1,15 @@
 {
-  "name": "jupyterlab-snippets",
+  "name": "@kptan86/jupyterlab-snippets-multimenus",
   "version": "0.3.2",
-  "description": "Snippets Extension for JupyterLab",
+  "description": "Multi-menu Snippets Extension for JupyterLab",
   "keywords": [
     "jupyter",
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/QuantStack/jupyterlab-snippets",
-  "bugs": {
-    "url": "https://github.com/QuantStack/jupyterlab-snippets/issues"
-  },
+  "homepage": "https://github.com/kuanpern/jupyterlab-snippets-multimenus",
   "license": "BSD-3-Clause",
-  "author": "QuantStack",
+  "author": "kptan86@gmail.com",
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
@@ -22,16 +19,16 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/QuantStack/jupyterlab-snippets.git"
+    "url": "https://github.com/kuanpern/jupyterlab-snippets-multimenus.git"
   },
   "scripts": {
     "build": "jlpm run build:lib",
-    "build:labextension": "cd jupyterlab-snippets && rimraf labextension && mkdirp labextension && cd labextension && npm pack ../..",
+    "build:labextension": "cd jupyterlab-snippets-multimenus && rimraf labextension && mkdirp labextension && cd labextension && npm pack ../..",
     "build:lib": "tsc",
     "build:all": "jlpm run build:labextension",
     "clean": "jlpm run clean:lib",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
-    "clean:labextension": "rimraf jupyterlab-snippets/labextension",
+    "clean:labextension": "rimraf jupyterlab-snippets-multimenus/labextension",
     "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
     "prepare": "jlpm run clean && jlpm run build",
     "watch": "tsc -w"
@@ -61,7 +58,7 @@
             "pip"
           ],
           "base": {
-            "name": "jupyterlab-snippets"
+            "name": "jupyterlab-snippets-multimenus"
           }
         }
       },
