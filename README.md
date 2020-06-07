@@ -1,15 +1,13 @@
-# jupyterlab-snippets
+# jupyterlab-snippets-multimenu
 
-![Github Actions Status](https://github.com/QuantStack/jupyterlab-snippets/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/pypi/v/jupyterlab-snippets.svg)](https://pypi.python.org/project/jupyterlab-snippets)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-snippets.svg)](https://anaconda.org/conda-forge/jupyterlab-snippets)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/QuantStack/jupyterlab-snippets/stable?urlpath=lab/tree/binder/notebook.ipynb)
+Snippets extension with multiple menu support for JupyterLab.
 
-Snippets Extension for JupyterLab.
-
-This extension is composed of a Python package named `jupyterlab-snippets`
-for the server extension and a NPM package named `jupyterlab-snippets`
+This extension is composed of a Python package named `jupyterlab-snippets-multimenus`
+for the server extension and a NPM package named `jupyterlab-snippets-multimenus`
 for the frontend extension.
+
+This repo is forked from the [jupyterlab-snippets](https://github.com/QuantStack/jupyterlab-snippets) project.
+
 
 ## Requirements
 
@@ -18,16 +16,8 @@ for the frontend extension.
 
 ## Install
 
-Using conda:
-
-```
-conda install -c conda-forge jupyterlab-snippets
-```
-
-Using pip:
-
 ```bash
-pip install jupyterlab-snippets
+pip install jupyterlab-snippets-multimenus
 ```
 
 Rebuild JupyterLab:
@@ -38,27 +28,22 @@ jupyter lab build
 
 ## Usage
 
-Add snippets in `[jupyter_data_dir]/snippets` (see: https://jupyter.readthedocs.io/en/latest/projects/jupyter-directories.html#id2)
+
+multimenus_snippets  multimenus_snippets_config
+
+Add snippets in `[jupyter_data_dir]/multimenus_snippets`
 
 To find the Jupyter data directory, run:
 ```bash
 $ jupyter --path
 ```
-This will for example show the following list on macOS:
-```
-config:
-    /Users/<username>/.jupyter
-    ...
-data:
-    /Users/<username>/Library/Jupyter
-    /Users/<username>/miniconda3/envs/<envname>/share/jupyter
-    ...
-runtime:
-    ...
-```
+Any path under data: will do. We recommend using the virtual environment shared directory (e.g. `$VENVDIR/share/jupyter/`) (please create the directory if not existed)
 
-Use the first directory listed under `data:` to add files to, these become snippets in the menu. Each file contains one
-snippet. Directories can be used to organize the snippet files and will become submenu's in the menu.
+Snippets will be organized in menus following the structure of the directories. The directories directly under `multimenus_snippets/` will be used to create menus.
+
+The order of menus and sub-menus can be specified using a JSON file. An example is given in `example_snippets/snippet_config.json`. This file should be put under `[jupyter_data_dir]/multimenus_snippets_config/` to take effect. If this config file is not provided, the menu will be created with all files in the directory with a default ordering.
+
+
 
 In JupyterLab, use the "Snippets" menu to select the snippet:
 
@@ -95,50 +80,3 @@ jupyter lab build
 
 ## Contributing
 
-### Development Install
-
-The `jlpm` command is JupyterLab's pinned version of
-[yarn](https://yarnpkg.com/) that is installed with JupyterLab. You may use
-`yarn` or `npm` in lieu of `jlpm` below.
-
-```bash
-# Clone the repo to your local environment
-# Move to jupyterlab-snippets directory
-# Install the server extension
-pip install -e .
-
-# Register the server extension
-jupyter serverextension enable --py jupyterlab-snippets
-
-# Install the dependencies
-jlpm
-
-# Build the TypeScript source
-jlpm build
-
-# Link your development version of the extension with JupyterLab
-jupyter labextension link .
-
-# Rebuild the TypeScript source after making changes
-jlpm build
-
-# Rebuild JupyterLab after making any changes
-jupyter lab build
-```
-
-You can watch the source directory and run JupyterLab in watch mode to watch for changes in the extension's source and automatically rebuild the extension and application.
-
-```bash
-# Watch the source directory in another terminal tab
-jlpm watch
-
-# Run jupyterlab in watch mode in one terminal tab
-jupyter lab --watch
-```
-
-### Uninstall
-
-```bash
-pip uninstall jupyterlab-snippets
-jupyter labextension uninstall jupyterlab-snippets
-```
