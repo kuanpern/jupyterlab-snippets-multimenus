@@ -8,6 +8,8 @@ for the frontend extension.
 
 This repo is forked from the [jupyterlab-snippets](https://github.com/QuantStack/jupyterlab-snippets) project.
 
+<img src="images/screenshot_01.png"></img>
+
 
 ## Requirements
 - JupyterLab >= 2.0
