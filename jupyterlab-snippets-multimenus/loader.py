@@ -1,20 +1,23 @@
 import os
+import json
+import collections
 
 from pathlib import PurePath
-
 from jupyter_core.paths import jupyter_path
-
 import tornado
+
+import logging
+logger = logging.getLogger(__name__)
 
 
 class SnippetsLoader:
     def __init__(self):
-        self.snippet_paths = jupyter_path(os.environ.get('snippets_dirname', "multimenus_snippets"))
+        self.snippet_config_paths = jupyter_path("multimenus_snippets_config")
+        self.snippet_paths        = jupyter_path("multimenus_snippets")
+    # end def
 
     def autogen_snippet_config(self, dirname):
         '''Generate snippet config file by files in source directory'''
-        import collections
-        import json
         
         def nested_dd():
             return collections.defaultdict(nested_dd)
@@ -53,7 +56,6 @@ class SnippetsLoader:
     def snippets_to_fileparts(self, snippet_config):
         def recurse(inlist):
             assert isinstance(inlist, (list, tuple)), 'input must be a list or tuple'
-            #print(inlist)
             results = []
             if all(isinstance(_, str) for _ in inlist):
                 results = [[_] for _ in inlist]
@@ -89,16 +91,30 @@ class SnippetsLoader:
     # end def
 
     def collect_snippets(self):
+
+        # use snippet config if there is any
         snippets = []
+        for root_path in self.snippet_config_paths:
+            _filename = os.sep.join([root_path, 'snippet_config.json'])
+            if os.path.isfile(_filename):
+                with open(_filename, 'r') as fin:
+                    snippet = json.load(fin)
+                    snippets.extend(snippet)
+                # end with
+            # end if
+        # end for
+        if len(snippets) != 0:
+            return snippets
+        # end if
+
+        # fallback if snippet config not defined
         for root_path in self.snippet_paths:
             snippet_config = self.autogen_snippet_config(root_path)
             _snippets = self.snippets_to_fileparts(snippet_config)
             snippets.extend(_snippets)
         # end for
-
         return snippets
     # end def
-
 
 
     def get_snippet_content(self, snippet):

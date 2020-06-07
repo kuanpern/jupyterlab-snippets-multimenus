@@ -1,0 +1,11 @@
+virtualenv -ppython3 venv && source venv/bin/activate && \
+pip install jupyterlab && \
+pip install . && jlpm && jlpm build && jupyter-lab build 
+
+
+jupyter labextension install @kptan86/jupyterlab-snippets-multimenus
+
+npm publish --access=public
+
+cp -r example_snippets/multimenus_snippets/ venv/share/jupyter/
+

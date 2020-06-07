@@ -36,7 +36,7 @@ package_data_spec = {
 data_files_spec = [
     ("share/jupyter/lab/extensions", lab_path, "*.tgz"),
     ("etc/jupyter/jupyter_notebook_config.d",
-     "jupyter-config", "jupyterlab-snippets.json"),
+     "jupyter-config", "jupyterlab-snippets-multimenus.json"),
 ]
 
 cmdclass = create_cmdclass("jsdeps",

@@ -1,6 +1,6 @@
 {
   "name": "@kptan86/jupyterlab-snippets-multimenus",
-  "version": "0.3.2",
+  "version": "0.1.3",
   "description": "Multi-menu Snippets Extension for JupyterLab",
   "keywords": [
     "jupyter",
