@@ -93,26 +93,29 @@ class SnippetsLoader:
     def collect_snippets(self):
 
         # use snippet config if there is any
-        snippets = []
+        snippet_config = []
         for root_path in self.snippet_config_paths:
             _filename = os.sep.join([root_path, 'snippet_config.json'])
             if os.path.isfile(_filename):
                 with open(_filename, 'r') as fin:
-                    snippet = json.load(fin)
-                    snippets.extend(snippet)
+                    _config = json.load(fin)
+                    snippet_config.extend(_config)
                 # end with
             # end if
         # end for
-        if len(snippets) != 0:
+        if len(snippet_config) != 0:
+            snippets = self.snippets_to_fileparts(snippet_config)
             return snippets
         # end if
 
         # fallback if snippet config not defined
+        snippets = []
         for root_path in self.snippet_paths:
             snippet_config = self.autogen_snippet_config(root_path)
             _snippets = self.snippets_to_fileparts(snippet_config)
             snippets.extend(_snippets)
         # end for
+
         return snippets
     # end def
 
